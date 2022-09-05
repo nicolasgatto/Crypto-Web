@@ -12,8 +12,8 @@
             <router-link to="">Help</router-link>
         </div>
         <div class="button">
-        <router-link class="btn1" to="/SignUp">Sign up</router-link>
-        <router-link class="btn2" to="/Login">Log in</router-link>
+            <router-link class="btn1" to="/SignUp">Sign up</router-link>
+            <router-link class="btn2" to="/Login">Log in</router-link>
         </div>
     </div>
   </template>
