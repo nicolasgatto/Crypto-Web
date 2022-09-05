@@ -16,12 +16,12 @@
 
 <style>
 .title{
+  margin: 0 1.5rem;
+  margin-top: 70px;
     text-align: center;
     color: #000000;
     font-size: 3.5rem;
-    margin: 0 1.5rem;
     text-shadow: 0 0 0.7px #000;
     font-weight: 400;
-    margin-top: 70px;
 }
 </style>

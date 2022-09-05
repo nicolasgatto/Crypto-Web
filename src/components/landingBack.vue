@@ -14,8 +14,8 @@
 <style>
 .background{
     position: absolute;
+    margin-left: 91rem;
     width: 600px;
     height: 600px;
-    margin-left: 91rem;
 }
 </style>

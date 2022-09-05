@@ -23,41 +23,41 @@ export default {
   color: #fff;
 }
 .text-header{
-  font-size: 7rem;
-  color: #000;
   margin-top: 100px;
   margin-left: 15rem;
+  color: #000;
+  font-size: 7rem;
 }
 span{
   color: #000;
 }
 .text{
-  color: #000;
-  font-size: 1.6rem;
   margin-left: 15rem;
   padding-top: 5rem;
+  color: #000;
+  font-size: 1.6rem;
 }
 .btn3{
   position: absolute;
-  padding: 1rem 2.7rem;
-  border-radius: 1.3rem;
-  border: 1px solid #000000;
-  color: #000;
-  background-color: #fff;
-  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
-  text-transform: uppercase;
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.6rem;
-  letter-spacing: 2.5px;
   margin-left: 30rem;
   margin-top: 130px;
+  padding: 1rem 2.7rem;
+  border-radius: 1.3rem;
+  background-color: #fff;
+  border: 1px solid #000000;
+  font-family: 'Roboto', sans-serif;
+  color: #000;
+  font-size: 1.6rem;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease 0s;
   cursor: pointer;
 }
 .btn3:hover {
   background-color: #2EE59D;
-  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
   color: #fff;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
   transform: translateY(-7px);
 }
   </style>

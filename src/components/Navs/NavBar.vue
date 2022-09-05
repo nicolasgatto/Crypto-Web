@@ -30,29 +30,45 @@
 <style>
 .navbar{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding-top: 17px;
     padding-bottom: 17px;
     padding-left: 12rem;
     padding-right: 6rem;
+    justify-content: space-between;
+    align-items: center;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
 }
+.logo{
+    position: absolute;
+    height: 32px;
+    width: 32px;
+}
+.name{
+    margin-left: 4rem;
+    color: #000000;
+    font-size: 2.5rem;
+    text-shadow: 0 0 0.9px #000;
+}
 .links a{
+    margin: 0 1.5rem;
     color: #000000;
     font-size: 1.5rem;
-    margin: 0 1.5rem;
     text-shadow: 0 0 0.7px #000;
 }
 .btn1{
+    margin: 2.5rem;
     padding: 0.8rem 2.7rem;
     border-radius: 1.3rem;
     border: 1px solid #000000;
     color: #000000;
     font-size: 1.6rem;
-    margin: 2.5rem;
     transition: all 0.3s ease 0s;
     cursor: pointer;
+}
+.btn1:hover{
+    background-color: #2EE59D;
+    color: #fff;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
 }
 .btn2{
     padding: 0.8rem 2.7rem;
@@ -61,21 +77,5 @@
     border: 1px solid #000000;
     color: #fff;
     font-size: 1.6rem;
-}
-.btn1:hover{
-    background-color: #2EE59D;
-    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
-    color: #fff;
-}
-.logo{
-    position: absolute;
-    height: 32px;
-    width: 32px;
-}
-.name{
-    color: #000000;
-    font-size: 2.5rem;
-    margin-left: 4rem;
-    text-shadow: 0 0 0.9px #000;
 }
 </style>
