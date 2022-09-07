@@ -5,7 +5,7 @@
             <router-link to="/" class="name">Shade</router-link>
         </div>
         <div class="links">
-            <router-link to="">Market</router-link>
+            <router-link to="/Market">Market</router-link>
             <router-link to="">Buy Cryptos</router-link>
             <router-link to="">NFTs</router-link>
             <router-link to="">About Us</router-link>

@@ -1,16 +1,16 @@
 <template>
   <div class="signup">
-      <NavBarSignup/>
-      <Login/>
+      <NavBarAlt/>
+      <LoginForm/>
   </div>
 </template>
 
 <script>
-import NavBarSignup from '@/components/Navs/NavBarSignup.vue'
-import Login from '@/components/Forms/LoginForm.vue'
+import NavBarAlt from '@/components/Navs/NavBarAlt.vue'
+import LoginForm from '@/components/Forms/LoginForm.vue'
   
 export default {
   name: 'Home',
-  components: {NavBarSignup, Login}
+  components: {NavBarAlt, LoginForm}
 }
 </script>
