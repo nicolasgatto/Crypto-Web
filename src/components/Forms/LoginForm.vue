@@ -41,7 +41,6 @@
   top: 50%;
   transform: translate(-50%, -50%);
   border-radius:10px;
-  background:white;
   box-shadow: 2px 1px 21px -9px rgba(0,0,0,0.38);
 }
 input{

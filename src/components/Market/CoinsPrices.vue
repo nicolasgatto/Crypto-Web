@@ -1,6 +1,5 @@
 <template>
-    <div class="coin-market">
-      <div class="row">
+      <div class="coin-market">
         <h1>Coin Market</h1>
         <input type="text" placeholder="Search" class="search" v-model="textSearch" @keyup="searchCoin()"/>
         <div class="table">
@@ -14,23 +13,20 @@
                 </thead>
                 <tbody>
                     <tr v-for="(coin) in filteredCoins" :key="coin.id">
-                        <td>
-                            <img :src="coin.image" :alt="coin.name" class="coin-img" />
-                            <span>
-                            {{ coin.name }}
-                            </span>
-                            <span>
-                            {{ coin.symbol }}
-                            </span>
-                        </td>
+                        <div>
+                            <td>
+                                <img class="coin-img" :src="coin.image" :alt="coin.name"/>
+                                <span>{{ coin.name }}</span>
+                                <span> / {{ coin.symbol }}</span>
+                            </td>
+                        </div>
                         <td>${{ coin.current_price.toLocaleString() }}</td>
-                        <td>{{ coin.total_volume.toLocaleString() }}</td>
+                        <td class="total-volume">{{ coin.total_volume.toLocaleString() }}</td>
                     </tr>
                 </tbody>
             </table>
         </div>
       </div>
-    </div>
 </template>
   
 <script>
@@ -39,7 +35,7 @@
       return {
         coins: [],
         filteredCoins: [],
-        titles: ["Coin", "Price", "24h Volume"],
+        titles: ["Coin", "Price", "24h"],
         textSearch: "",
       };
     },
@@ -64,27 +60,45 @@
 <style scoped>
 .coin-market{
     text-align: center;
-    padding: 20px;
-    font-family: 'telex', sans-serif;
+    padding: 25px;
+}
+input{
+    width: 30%;
+    padding: 15px;
+    margin: 5px 0 30px;
+    font-family: 'Telex', sans-serif;
+}
+input[type=text]:focus{
+    outline: none;
+}
+td{
+    text-align: center;
 }
 .table{
+    margin-top: 80px;
     padding: 10px;
-    padding-left: 80px;
+    padding-left: 30px;
     width:450px;
-    height: 400px;
+    height: 530px;
     position: fixed;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     border-radius:10px;
-    background:#fff;
+    font-size: 1.6vh;
     box-shadow: 2px 1px 21px -9px rgba(0,0,0,0.38);
     overflow: scroll;
 }
 .table::-webkit-scrollbar{
     display: none;
 }
+span{
+    margin-left: 5px;
+}
 .coin-img{
     width: 2rem;
+}
+.total-volume{
+    padding-left: 50px;
 }
 </style>
