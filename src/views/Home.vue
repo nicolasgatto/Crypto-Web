@@ -60,4 +60,9 @@ span{
   box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
   transform: translateY(-7px);
 }
+.background {
+  float: right;
+  width: 800px;
+  height: 800px;
+}
   </style>

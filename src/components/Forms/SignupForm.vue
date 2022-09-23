@@ -3,11 +3,17 @@
       <form>
         <div class="form">
           <h1 class="title">Sign Up</h1>
-          <label for="email">Email</label>
-          <input type="text" placeholder="Enter Email" required />
-          <label for="psw">Password</label>
-          <input type="password" placeholder="Enter Password" minlength="8" maxlength="18" required />
-          <p>By creating an account you agree to our <router-link to="" style="color:dodgerblue">Terms of Use</router-link></p>
+          <div class="email">
+            <label for="email">Email</label>
+            <input type="text" placeholder="Enter Email" required />
+          </div>
+          <div class="password">
+            <label for="psw">Password</label>
+            <input type="password" placeholder="Enter Password" minlength="8" maxlength="18" required />
+          </div>
+          <div class="terms-ofuse">
+            <p>By creating an account you agree to our <router-link to="" style="color:dodgerblue">Terms of Use</router-link></p>
+          </div>
           <div class="submit-btn">
             <button type="submit" class="btn">Sign Up</button>
           </div>
@@ -30,13 +36,10 @@
 </script>
 
 <style scoped>
-.title{
-  text-align: center;
-}
 .form {
   padding: 20px;
-  width:500px;
-  height: 410px;
+  width:750px;
+  height: 600px;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -44,6 +47,13 @@
   border-radius:10px;
   box-shadow: 2px 1px 21px -9px rgba(0,0,0,0.38);
   }
+.title{
+  font-size: 3rem;
+  text-align: center;
+}
+.email{
+  padding-top: 40px;
+}
 input{
   width: 100%;
   padding: 15px;
@@ -55,6 +65,9 @@ input{
 input[type=text]:focus, input[type=password]:focus, input[type=phone]:focus, select:focus {
   background-color: #ddd;
   outline: none;
+}
+.terms-ofuse{
+  padding-top: 25px;
 }
 .btn{
   background-color: #fff;

@@ -16,7 +16,7 @@
     }
 </script>
 
-<style>
+<style scoped>
 .navbar{
     display: flex;
     padding-top: 17px;
