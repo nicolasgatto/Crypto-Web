@@ -1,11 +1,9 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import SignUp from '../views/SignUp.vue'
 import Login from '../views/Login.vue'
 import Market from '../views/Market.vue'
-
-Vue.use(VueRouter)
+import Nft from '../views/NFT.vue'
 
 const routes = [
   {
@@ -28,9 +26,15 @@ const routes = [
     name: 'market',
     component: Market
   },
+  {
+    path: '/nft',
+    name: 'nft',
+    component: Nft
+  },
 ]
 
-const router = new VueRouter({
+const router = createRouter({
+  history: createWebHistory(process.env.BASE_URL),
   routes
 })
 

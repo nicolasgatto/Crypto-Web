@@ -1,8 +1,10 @@
 <template>
-    <div class="navbar">
-        <div class="company">
-            <router-link to="/"><img src="@/assets/logo.png" alt="logo" class="logo"></router-link>
-            <router-link to="/" class="name">Shade</router-link>
+    <div class="container-fluid">
+        <div class="navbar">
+            <div class="company">
+                <router-link to="/"><img src="@/assets/logo.png" alt="logo" class="logo"></router-link>
+                <router-link to="/" class="name">Shade</router-link>
+            </div>
         </div>
     </div>
   </template>
@@ -17,11 +19,17 @@
 </script>
 
 <style scoped>
+a{
+    text-decoration: none;
+}
+.container-fluid{
+    padding-left: 0;
+    padding-right: 0;
+}
 .navbar{
-    display: flex;
     padding-top: 17px;
     padding-bottom: 17px;
-    padding-left: 12rem;
+    padding-left: 6rem;
     padding-right: 6rem;
     justify-content: space-between;
     align-items: center;

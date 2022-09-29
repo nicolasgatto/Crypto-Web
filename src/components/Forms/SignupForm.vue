@@ -1,29 +1,29 @@
 <template>
-    <div class="signup">
-      <form>
-        <div class="form">
-          <h1 class="title">Sign Up</h1>
-          <div class="email">
-            <label for="email">Email</label>
-            <input type="text" placeholder="Enter Email" required />
-          </div>
-          <div class="password">
-            <label for="psw">Password</label>
-            <input type="password" placeholder="Enter Password" minlength="8" maxlength="18" required />
-          </div>
-          <div class="terms-ofuse">
-            <p>By creating an account you agree to our <router-link to="" style="color:dodgerblue">Terms of Use</router-link></p>
-          </div>
-          <div class="submit-btn">
-            <button type="submit" class="btn">Sign Up</button>
-          </div>
-          <div class="alredy-registered">
-            <p>Already have an account? <router-link to="/Login"><span>Log In</span></router-link></p>
-          </div>
-          <div class="split-line"></div>
+  <div class="container-fluid">
+    <form class="form">
+      <div>
+        <h1 class="title">Sign Up</h1>
+        <div class="email">
+          <label for="email">Email</label>
+          <input type="text" placeholder="Enter Email" required />
         </div>
-      </form>
-    </div>
+        <div class="password">
+          <label for="psw">Password</label>
+          <input type="password" placeholder="Enter Password" minlength="8" maxlength="18" required />
+        </div>
+        <div class="terms-ofuse">
+          <p>By creating an account you agree to our <router-link to="" style="color:dodgerblue">Terms of Use</router-link></p>
+        </div>
+        <div class="submit-btn">
+          <button type="submit" class="btn">Sign Up</button>
+        </div>
+        <div class="alredy-registered">
+          <p>Already have an account? <router-link to="/Login"><span>Log In</span></router-link></p>
+        </div>
+        <div class="split-line"></div>
+      </div>
+    </form>
+  </div>
   </template>
 
 <script>
@@ -37,10 +37,11 @@
 
 <style scoped>
 .form {
-  padding: 20px;
+  position: absolute;
+  padding: 2rem;
+  margin-top: 3rem;
   width:750px;
   height: 600px;
-  position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -84,7 +85,7 @@ input[type=text]:focus, input[type=password]:focus, input[type=phone]:focus, sel
   transition: all 0.3s ease 0s;
   cursor: pointer;
 }
-button:hover {
+.btn:hover {
   background-color: #2EE59D;
   color: #fff;
   box-shadow: 0 0 15px rgba(46, 229, 157, 0.4);
@@ -98,9 +99,9 @@ span{
   color: dodgerblue;
 }
 .split-line{
-    margin: 32px auto;
-    width: 100%;
-    height: 1px;
-    background: #ddd;
+  margin: 32px auto;
+  width: 100%;
+  height: 1px;
+  background: #ddd;
 }
 </style>
